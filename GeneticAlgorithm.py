@@ -2,13 +2,7 @@ from GeneticObjects import Population
 from TSPParser import TSPParser
 import random
 
-#    By: Justin DeCunha
-#    5523162
-#    COSC3P71 - Assignment #2
 display = True  # Set true if you want to display paths and statistical data graphically
-                # Requires matplotlib - installed using the following commands:
-                # python -mpip install -U pip
-                # python -mpip install -U matplotlib
 
 if display is True:
     import GAStatDisplay
@@ -26,7 +20,7 @@ x_chance = 1  # The chance crossover occurs
 m_chance = 0.01  # The chance mutation occurs
 file_name = 'dj38.tsp'  # The name of the file to use - should be formatted similar to the example files
 
-tsp_data = TSPParser('DataSets//' + file_name)  # Parse file data
+tsp_data = TSPParser('ddatasets//' + file_name)  # Parse file data
 
 if display is True:
     displayer = Grapher(tsp_data)  # the displayer
