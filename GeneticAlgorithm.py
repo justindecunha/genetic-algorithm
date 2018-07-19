@@ -20,7 +20,7 @@ x_chance = 1  # The chance crossover occurs
 m_chance = 0.01  # The chance mutation occurs
 file_name = 'dj38.tsp'  # The name of the file to use - should be formatted similar to the example files
 
-tsp_data = TSPParser('ddatasets//' + file_name)  # Parse file data
+tsp_data = TSPParser('datasets//' + file_name)  # Parse file data
 
 if display is True:
     displayer = Grapher(tsp_data)  # the displayer
